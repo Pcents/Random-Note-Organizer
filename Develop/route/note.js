@@ -3,9 +3,11 @@ const noteRou = require('express').Router();
 const { v4: uuidv4 } = require('uuid');
 const { readAndAppend, readFromFile } = require('../helpers/fsUtils');
 
+// check amount of periods for db
+
 // GET Route for retrieving all the feedback
 noteRou.get('/', (req, res) =>
-  readFromFile('../db/db.json').then((data) => res.json(JSON.parse(data)))
+  readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
 );
 // POST Route for submitting feedback
 noteRou.post('/', (req, res) => {
@@ -21,7 +23,7 @@ noteRou.post('/', (req, res) => {
         note_id: uuidv4(),
       };
   
-      readAndAppend(newNote, '../db/db.json');
+      readAndAppend(newNote, './db/db.json');
   
       const response = {
         status: 'success',

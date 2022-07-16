@@ -1,13 +1,9 @@
-const express = require('express');
+const router = require('express').Router();
 // Import our modular router for /notes
 const notesRouter = require('./note');
-// import out db
-const dbRouter =require('../db/db.json');
+const homeRoutes = require('./home');
 
-const app = express();
+router.use('/api/note', notesRouter);
+router.use('/', homeRoutes);
 
-app.use('./note', notesRouter);
-// TODO: Initialize diagnostics route
-app.use('../db/db.json', dbRouter);
-
-module.exports = app;
+module.exports = router;
