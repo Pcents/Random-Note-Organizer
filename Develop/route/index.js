@@ -3,7 +3,7 @@ const router = require('express').Router();
 const notesRouter = require('./note');
 const homeRoutes = require('./home');
 
-router.use('/api/note', notesRouter);
+router.use('/api/notes', notesRouter);
 router.use('/', homeRoutes);
 
 module.exports = router;

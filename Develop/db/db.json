@@ -2,11 +2,36 @@
     {
         "title": "Test Title",
         "text": "Test text",
-        "note_id": "test id"
+        "id": "test id"
     },
     {
-        "title": "Test wrtg",
-        "text": "Test jamse",
-        "note_id": "2ec37185-0a22-43e8-b191-5e5ae37ec5fd"
+        "title": "sgfd",
+        "text": "adfwefe",
+        "id": "b8923691-e501-43b6-b63a-cab0d59a5bef"
+    },
+    {
+        "title": "heyo",
+        "text": "this is a note\n",
+        "id": "4ef72006-8350-4629-abba-a3227efa342a"
+    },
+    {
+        "title": "hello",
+        "text": "world",
+        "id": "fc2b413a-74eb-4d8c-b054-d07af038e04f"
+    },
+    {
+        "title": "wow",
+        "text": "cant believe this works",
+        "id": "63617391-66cc-4044-bdca-daf289e490c4"
+    },
+    {
+        "title": "click here",
+        "text": "THE note pops up",
+        "id": "e77b8e50-e82e-4264-8022-3beb7313ff19"
+    },
+    {
+        "title": "can this be deleted",
+        "text": "?",
+        "id": "7617bf4a-6aed-40e8-a3b9-c7d6277534a0"
     }
 ]
